@@ -1,11 +1,9 @@
 public class Main {
+    public static void main(String[] args) {
 
-    public static void main(String[] args)
-    {
-
-        int income  = 44000;
-        int spending = 30000;
-        System.out.println(income - spending);
+        String name = "Anton";
+        String surname = "Len";
+        System.out.print(name + " " + surname);
 
 
     }
