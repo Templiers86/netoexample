@@ -1,8 +1,12 @@
 public class Main {
-    public static void main(String[] args) {
 
-        String name = "Anton";
-        String surname = "Len";
-        System.out.print(name + " " + surname);
+    public static void main(String[] args)
+    {
+
+        int income  = 44000;
+        int spending = 30000;
+        System.out.println(income - spending);
+
+
     }
 }
