@@ -1,10 +1,34 @@
+import java.util.Scanner;
+
 public class Main {
+
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        String name = "Anton";
-        String surname = "Len";
-        System.out.print(name + " " + surname);
+        System.out.println("Ну привет.ХодЮт тут, ходЮт!!!");
 
+        System.out.println("Введите цену товара (в руб.):");
+        int price = scanner.nextInt();
+
+        System.out.println("Введите вес товара (в кг.):");
+        int weight = scanner.nextInt();
+
+        int dudy = calculateCustoms(price, weight);
+        System.out.println("Размер пошлины (в руб.)" + dudy);
+    }
+
+        public static int calculateCustoms(int price, int weight) {
+        int result = price + weight * 100;
+        return result;
 
     }
+
+
 }
+
+
+
+
+
+
+
