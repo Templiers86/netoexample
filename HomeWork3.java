@@ -13,12 +13,12 @@ public class HomeWork3 {
         System.out.println("Введите вес товара (в кг.):");
         int weight = scanner.nextInt();
 
-        int dudy = calculateCustoms(price, weight);
-        System.out.println("Размер пошлины (в руб.)" + dudy);
+        int duty = calculateCustoms(price, weight);
+        System.out.println("Размер пошлины (в руб.)" + duty);
     }
 
         public static int calculateCustoms(int price, int weight) {
-        int result = price + weight * 100;
+        int result = price/100 + weight * 100;
         return result;
 
     }
