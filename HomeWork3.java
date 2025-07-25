@@ -1,29 +1,24 @@
 import java.util.Scanner;
+import static my.netology.service.CustomsService.calculateCustoms;
 
 public class HomeWork3 {
 
     public static void main(String[] args) {
+
+
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ну привет.ХодЮт тут, ходЮт!!!");
+        System.out.println("Доброго времени суток");
 
-        System.out.println("Введите цену товара (в руб.):");
-        int price = scanner.nextInt();
+        System.out.println("Введите цену товара (руб.):");
+        int prace = scanner.nextInt();
 
         System.out.println("Введите вес товара (в кг.):");
         int weight = scanner.nextInt();
 
-        int duty = calculateCustoms(price, weight);
-        System.out.println("Размер пошлины (в руб.)" + duty);
+        int duty = calculateCustoms(prace, weight);
+        System.out.println("Вывод пошлины:" + duty + "(руб.)");
     }
-
-        public static int calculateCustoms(int price, int weight) {
-        int result = price/100 + weight * 100;
-        return result;
-
-    }
-
-
 }
 
 
